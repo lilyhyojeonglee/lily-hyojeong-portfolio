@@ -1,76 +1,76 @@
-import project1 from "../assets/projects/project-1.webp";
-import project2 from "../assets/projects/project-2.webp";
-import project3 from "../assets/projects/project-3.webp";
-import project4 from "../assets/projects/project-4.webp";
+import project1 from '../assets/projects/project-1.webp';
+import project2 from '../assets/projects/project-2.webp';
+import project3 from '../assets/projects/project-3.webp';
+import project4 from '../assets/projects/project-4.webp';
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I’m a frontend-focused software engineer with full-stack capabilities, specializing in React, Next.js, and Tailwind CSS. With hands-on experience from both startups and structured training programs, I enjoy building products that are visually clean, technically scalable, and globally accessible. As the founder of UVA's Korean International Student Organization, I also bring leadership and community-building experience into every team I join.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `Hi! I’m Hyojeong Lee (Lily) — a frontend developer who’s passionate about crafting user-friendly and inclusive interfaces. I’ve built projects ranging from a real estate proxy contract app for international students to a full-stack e-commerce platform. I recently completed an AWS DevOps bootcamp in Korea and have experience with modern tools like Vite, Next.js, Tailwind, and S3. I’m always looking to grow through collaboration, solve real-world problems through code, and build tech that empowers diverse communities. Outside of coding, I enjoy dance, content creation, and organizing student-led events.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: '2024',
+    role: 'Frontend Developer (Bootcamp Trainee)',
+    company: 'Bitcamp AWS DevOps Bootcamp (Seoul)',
+    description: `Completed an intensive DevOps bootcamp covering AWS Lightsail/EC2, Docker, Jenkins, Kubernetes, CI/CD pipelines, and frontend tools. Built and deployed full-stack apps with Next.js, S3, and Vercel.`,
+    technologies: ['AWS', 'Docker', 'Jenkins', 'Vercel', 'Next.js', 'S3'],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: '2023',
+    role: 'Software Engineer & Team Lead',
+    company: 'A-Round Entertainment',
+    description: `Led a team of 20 engineers to build a dating app with user authentication, profile customization, and chat features. Managed development timelines and contributed frontend code using React Native.`,
+    technologies: ['React Native', 'Firebase', 'Figma', 'Expo'],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    year: '2022',
+    role: 'Frontend Developer',
+    company: 'Mannazu (Personal Project)',
+    description: `Developed an e-commerce site using Next.js, Tailwind CSS, and AWS S3 for image storage. Implemented login, admin panel, and responsive UI. Designed UI/UX using Balsamiq and Excalidraw.`,
+    technologies: ['Next.js', 'Tailwind', 'S3', 'Balsamiq'],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: '2021–2024',
+    role: 'Audio Visual Assistant',
+    company: 'University of Virginia',
+    description: `Supported classroom tech, set up AV systems, and worked directly with faculty to resolve issues. Built communication and hardware troubleshooting skills.`,
+    technologies: ['Customer Support', 'Tech Setup', 'AV Systems'],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: 'Mannazu E-Commerce Site',
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      'An online store featuring user login, image upload via AWS S3, admin panel, and responsive design using Tailwind and Next.js.',
+    technologies: ['Next.js', 'Tailwind', 'AWS S3', 'NextAuth'],
   },
   {
-    title: "Task Management App",
+    title: 'KISOConnect Feedback Board',
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      'An anonymous feedback board for international students, with future plans for admin panel and user auth.',
+    technologies: ['Node.js', 'PostgreSQL', 'Express', 'React'],
   },
   {
-    title: "Portfolio Website",
+    title: 'Real Estate Proxy App (Hometract)',
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      'A mobile app for foreigners in Korea to sign proxy contracts. Features ID verification, virtual accounts, e-signatures, and multilingual support.',
+    technologies: ['SwiftUI', 'Firebase', 'KakaoPay', 'iOS'],
   },
   {
-    title: "Blogging Platform",
+    title: 'Portfolio Website',
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "This personal portfolio website you're looking at! Built with React, Vite, and Tailwind. Deployed via Vercel.",
+    technologies: ['React', 'Vite', 'Tailwind', 'Vercel'],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: 'Charlottesville, VA / Seoul, Korea',
+  phoneNo: '+1 (123) 456-7890',
+  email: 'lilyhyojeonglee@gmail.com',
 };
