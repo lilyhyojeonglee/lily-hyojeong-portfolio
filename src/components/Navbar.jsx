@@ -1,4 +1,8 @@
 import logo from '../assets/logo.webp';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { SiNotion } from 'react-icons/si';
+import { FaInstagram } from 'react-icons/fa6';
 
 function Navbar() {
   return (
@@ -22,23 +26,31 @@ function Navbar() {
           rel="noopener noreferrer"
           aria-label="LinkedIn Profile"
         >
-          LinkedIn
+          <FaLinkedin className="text-stone-300" />
         </a>
         <a
-          href="https://www.linkedin.com/in/lily-lee-803228228/"
+          href="https://github.com/lilyhyojeonglee"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub Profile"
         >
-          GitHub
+          <FaGithub className="text-stone-300" />
         </a>
         <a
-          href="https://www.linkedin.com/in/lily-lee-803228228/"
+          href="https://www.instagram.com/lilyvnilli/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Notion"
+        >
+          <SiNotion className="text-stone-300" />
+        </a>
+        <a
+          href="https://www.instagram.com/lilyvnilli/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram Profile"
         >
-          Instagram
+          <FaInstagram className="text-stone-300" />
         </a>
       </div>
     </nav>

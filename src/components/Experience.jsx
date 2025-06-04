@@ -6,14 +6,22 @@ function Experience() {
       <h3 className="mb-20 text-center text-4xl">Experience</h3>
       <div>
         {EXPERIENCES.map((experience, index) => (
-          <div key={index}>
-            <p>{experience.year}</p>
-            <h3>{experience.role}</h3>
-            <span>{experience.company}</span>
-            <p>{experience.description}</p>
-            {experience.technologies.map((tech, techIndex) => (
-              <span key={techIndex}>{tech}</span>
-            ))}
+          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+            <div className="w-full lg:w-1/4">
+              <p className="mb-2 text-sm text-stone-400">{experience.year}</p>
+            </div>
+            <div className="w-full lg:w-3/4">
+              <h3 className="mb-2 font-semibold">
+                {experience.role}- <span>{experience.company}</span>{' '}
+              </h3>
+
+              <p className="mb-4 text-stone-400">{experience.description}</p>
+              {experience.technologies.map((tech, techIndex) => (
+                <span key={techIndex} className="mr-1 rounded bg-stone-900 p-2">
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>

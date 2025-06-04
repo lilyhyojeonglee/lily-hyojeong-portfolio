@@ -1,8 +1,8 @@
-import profilepic from '../assets/raviKumarProfile.webp';
+import profilepic from '../assets/IMG_7007 2.JPG';
 import { HERO_CONTENT } from '../constants';
 function Hero() {
   return (
-    <div className="pb-4 lg:mb-36 border">
+    <div className="pb-4 lg:mb-36 ">
       <div className="flex flex-wrap lg:flex-row-reverse">
         {/* Image on top in sm & md. Image on the left on lg enabled by flex-row-reverse*/}
         <div className="w-full lg:w-1/2">
