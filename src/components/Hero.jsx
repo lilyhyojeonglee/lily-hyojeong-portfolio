@@ -1,4 +1,4 @@
-import profilepic from '../assets/IMG_70072.JPG';
+import profilepic from '../assets/IMG_70072.jpg';
 import { HERO_CONTENT } from '../constants';
 function Hero() {
   return (
