@@ -1,4 +1,4 @@
-import profilepic from '../assets/IMG_7007 2.JPG';
+import profilepic from '../assets/IMG_70072.JPG';
 import { HERO_CONTENT } from '../constants';
 function Hero() {
   return (
@@ -28,7 +28,7 @@ function Hero() {
               {HERO_CONTENT}
             </p>
             <a
-              href="/resume.pdf"
+              href="/Resume_Lily_Hyojeong_Lee_2025.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
