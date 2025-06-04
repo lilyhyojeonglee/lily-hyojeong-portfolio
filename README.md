@@ -1,3 +1,7 @@
+# lily-hyojeong-portfolio
+
+My Portfolio web application built with Vite+Reactjs and tailwindCSS v4.1
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
