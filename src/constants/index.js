@@ -2,75 +2,78 @@ import project1 from '../assets/projects/project-1.webp';
 import project2 from '../assets/projects/project-2.webp';
 import project3 from '../assets/projects/project-3.webp';
 import project4 from '../assets/projects/project-4.webp';
+export const HERO_CONTENT = `I’m a frontend-leaning full-stack developer with practical experience in mobile, web, and DevOps. I’ve led teams, built real-world applications, and deployed full-stack systems using modern tools like React, TypeScript, Next.js, SwiftUI, Firebase, and AWS. With a strong foundation in both frontend engineering and backend architecture, I build user-first solutions that are secure, scalable, and efficient.`;
 
-export const HERO_CONTENT = `I’m a frontend-focused software engineer with full-stack capabilities, specializing in React, Next.js, and Tailwind CSS. With hands-on experience from both startups and structured training programs, I enjoy building products that are visually clean, technically scalable, and globally accessible. As the founder of UVA's Korean International Student Organization, I also bring leadership and community-building experience into every team I join.`;
-
-export const ABOUT_TEXT = `Hi! I’m Hyojeong Lee (Lily) — a frontend developer who’s passionate about crafting user-friendly and inclusive interfaces. I’ve built projects ranging from a real estate proxy contract app for international students to a full-stack e-commerce platform. I recently completed an AWS DevOps bootcamp in Korea and have experience with modern tools like Vite, Next.js, Tailwind, and S3. I’m always looking to grow through collaboration, solve real-world problems through code, and build tech that empowers diverse communities. Outside of coding, I enjoy dance, content creation, and organizing student-led events.`;
+export const ABOUT_TEXT = `Hi, I’m Hyojeong Lee (Lily) — a computer science major and frontend-focused software engineer passionate about building accessible, user-centered apps. I've led development for a real estate contract app, deployed a personal website on my own server using Proxmox and Cloudflare, and contributed to full-stack systems in both startup and bootcamp environments. As founder of KISO, I also bring leadership and community-building skills. Whether it's React, SwiftUI, or AWS, I love using tech to bridge gaps and empower users.`;
 
 export const EXPERIENCES = [
   {
-    year: '2024',
-    role: 'Frontend Developer (Bootcamp Trainee)',
-    company: 'Bitcamp AWS DevOps Bootcamp (Seoul)',
-    description: `Completed an intensive DevOps bootcamp covering AWS Lightsail/EC2, Docker, Jenkins, Kubernetes, CI/CD pipelines, and frontend tools. Built and deployed full-stack apps with Next.js, S3, and Vercel.`,
-    technologies: ['AWS', 'Docker', 'Jenkins', 'Vercel', 'Next.js', 'S3'],
+    year: 'Dec 2023 – Apr 2024',
+    role: 'Software Engineer & Manager',
+    company: 'A-Round Entertainment (Remote)',
+    description: `Led a 20-person engineering team building a dating app with real-time chat, premium subscriptions, and advanced matching. Developed 100+ UI screens and integrated Firebase-based chat and media upload. Improved delivery speed by 20% while working part-time.`,
+    technologies: ['React Native', 'Firebase', 'Expo', 'Figma', 'Image-Picker'],
   },
   {
-    year: '2023',
-    role: 'Software Engineer & Team Lead',
-    company: 'A-Round Entertainment',
-    description: `Led a team of 20 engineers to build a dating app with user authentication, profile customization, and chat features. Managed development timelines and contributed frontend code using React Native.`,
-    technologies: ['React Native', 'Firebase', 'Figma', 'Expo'],
+    year: 'Dec 2023 – Feb 2024',
+    role: 'Software Development Intern',
+    company: 'Atom Tech Solutions (Remote)',
+    description: `Built RESTful APIs for business listings and reviews. Improved query efficiency by 30% with MongoDB indexing. Created custom DOM-based search & filter features, increasing usability by 40%.`,
+    technologies: ['Node.js', 'Express', 'MongoDB', 'JavaScript'],
   },
   {
-    year: '2022',
+    year: 'June 2024 – July 2024',
     role: 'Frontend Developer',
-    company: 'Mannazu (Personal Project)',
-    description: `Developed an e-commerce site using Next.js, Tailwind CSS, and AWS S3 for image storage. Implemented login, admin panel, and responsive UI. Designed UI/UX using Balsamiq and Excalidraw.`,
-    technologies: ['Next.js', 'Tailwind', 'S3', 'Balsamiq'],
+    company: 'AWS DevOps Bootcamp (Bitcamp, Seoul)',
+    description: `Built login, shopping, and admin pages in a full-stack TypeScript app. Used AWS S3 for uploads, secured auth with NextAuth, and deployed via Vercel.`,
+    technologies: ['Next.js', 'TypeScript', 'AWS S3', 'NextAuth', 'Tailwind'],
   },
   {
-    year: '2021–2024',
+    year: 'Dec 2021 – Feb 2025',
     role: 'Audio Visual Assistant',
     company: 'University of Virginia',
-    description: `Supported classroom tech, set up AV systems, and worked directly with faculty to resolve issues. Built communication and hardware troubleshooting skills.`,
-    technologies: ['Customer Support', 'Tech Setup', 'AV Systems'],
+    description: `Managed AV systems for events, resolved tech issues in real-time, and trained new student staff on AV troubleshooting.`,
+    technologies: ['AV Hardware', 'Customer Support', 'Team Training'],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: 'Mannazu E-Commerce Site',
+    title: 'Hometract Real Estate App',
     image: project1,
     description:
-      'An online store featuring user login, image upload via AWS S3, admin panel, and responsive design using Tailwind and Next.js.',
-    technologies: ['Next.js', 'Tailwind', 'AWS S3', 'NextAuth'],
+      'A SwiftUI mobile app for foreigners in Korea to manage property contracts. Includes social login, ID verification, virtual accounts, and e-signature.',
+    technologies: ['SwiftUI', 'Firebase', 'KakaoPay', 'iOS'],
+    notion: 'https://www.notion.so/hometract-details',
   },
   {
-    title: 'KISOConnect Feedback Board',
+    title: 'Mannazu E-Commerce Site',
     image: project2,
     description:
-      'An anonymous feedback board for international students, with future plans for admin panel and user auth.',
-    technologies: ['Node.js', 'PostgreSQL', 'Express', 'React'],
+      'An e-commerce app with image uploads via AWS S3, responsive UI, and admin panel. Designed with Balsamiq and Excalidraw.',
+    technologies: ['Next.js', 'Tailwind', 'S3', 'NextAuth'],
+    notion: 'https://www.notion.so/mannazu-details',
   },
   {
-    title: 'Real Estate Proxy App (Hometract)',
+    title: 'Sublease.com',
     image: project3,
     description:
-      'A mobile app for foreigners in Korea to sign proxy contracts. Features ID verification, virtual accounts, e-signatures, and multilingual support.',
-    technologies: ['SwiftUI', 'Firebase', 'KakaoPay', 'iOS'],
+      'A subleasing platform with Google Maps API, PHP backend, secure auth, and Bootstrap UI. Features client-side validation and AJAX.',
+    technologies: ['PHP', 'Bootstrap', 'JavaScript', 'Google Maps API'],
+    notion: 'https://www.notion.so/sublease-details',
   },
   {
-    title: 'Portfolio Website',
+    title: 'Personal Website (leelily.com)',
     image: project4,
     description:
-      "This personal portfolio website you're looking at! Built with React, Vite, and Tailwind. Deployed via Vercel.",
-    technologies: ['React', 'Vite', 'Tailwind', 'Vercel'],
+      "Built with React, Vite, and Tailwind CSS, and animated using Framer's Motion One. Deployed on a mini-PC using Proxmox and Ubuntu. Configured with Nginx Proxy Manager and Cloudflare for SSL and DNS.",
+    technologies: ['Nginx', 'Ubuntu', 'Cloudflare', 'Proxmox'],
+    notion: 'https://www.notion.so/portfolio-details',
   },
 ];
 
 export const CONTACT = {
   address: 'Charlottesville, VA / Seoul, Korea',
-  phoneNo: '+1 (123) 456-7890',
-  email: 'lilyhyojeonglee@gmail.com',
+  phoneNo: '+1 (434) 466-1848',
+  email: 'hyojeonglee215@gmail.com',
 };

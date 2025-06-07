@@ -1,4 +1,5 @@
 import { EXPERIENCES } from '../constants';
+import { motion } from 'motion/react';
 
 function Experience() {
   return (
@@ -7,10 +8,20 @@ function Experience() {
       <div>
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            <div className="w-full lg:w-1/4">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1.5 }}
+              className="w-full lg:w-1/4"
+            >
               <p className="mb-2 text-sm text-stone-400">{experience.year}</p>
-            </div>
-            <div className="w-full lg:w-3/4">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+              className="w-full lg:w-3/4"
+            >
               <h3 className="mb-2 font-semibold">
                 {experience.role}- <span>{experience.company}</span>{' '}
               </h3>
@@ -21,7 +32,7 @@ function Experience() {
                   {tech}
                 </span>
               ))}
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
@@ -29,9 +40,4 @@ function Experience() {
   );
 }
 
-// year: "2023 - Present",
-//     role: "Senior Full Stack Developer",
-//     company: "Google Inc.",
-//     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-//     technologies:
 export default Experience;
